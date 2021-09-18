@@ -1,5 +1,5 @@
 void setup() {
-  size(800, 1000);
+  size(400, 400);
   draw(((int)(Math.random()*256)), ((int)(Math.random()*256)), ((int)(Math.random()*256)), ((int)(Math.random()*256)));
 }
 
