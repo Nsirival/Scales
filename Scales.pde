@@ -1,5 +1,5 @@
 void setup() {
-  size(800, 1000);
+  size(500, 500);
   dwaw();
 }
 
