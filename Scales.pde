@@ -1,9 +1,13 @@
 void setup() {
-  size(400, 400);
-  draw(((int)(Math.random()*256)), ((int)(Math.random()*256)), ((int)(Math.random()*256)), ((int)(Math.random()*256)));
+  size(800, 1000);
+  dwaw();
 }
 
-void draw(int g, int b, int g2, int b2) {
+void dwaw() {
+  int g = ((int)(Math.random()*256));
+  int b = ((int)(Math.random()*256));
+  int g2 = ((int)(Math.random()*256));
+  int b2 = ((int)(Math.random()*256));
   boolean shift = true;
   for (int y = 1100; y >-100; y -=20) {
     for (int x = 900; x > -100; x -= 45) {
@@ -12,8 +16,6 @@ void draw(int g, int b, int g2, int b2) {
       } else {
         scales(x, y, shift, g, b);
       }
-
-
       if (shift == true) {
         shift = false;
       } else {
